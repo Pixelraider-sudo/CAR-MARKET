@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <title>Order - Drive Your Dream</title>
+    
+</head>
+<body>
+
+    <div id="navbar">
+        <nav>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="brands.html">Brands</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="contact.html">Contact</a>
+                 <img src="drive your dream.jpg" alt="Brand Logo" width="60" height="60">
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="order-form">
+            <h1>Place Your Order</h1>
+            <p>Select your brand to see available premium models.</p>
+            
+            <form action="order.html" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="car">Select Brand:</label>
+                <select id="car" name="car" onchange="showSpecificModels()" required>
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes">Mercedes-Benz</option>
+                </select><br><br>
+
+                <div id="model-wrapper" style="display:none;">
+                    <label for="specific-model">Available Models:</label>
+                    <select id="specific-model" name="specific-model">
+                        <option value="">--Select Model--</option>
+                    </select>
+                </div>
+
+                <label>Payment Method:</label>
+                <div class="payment-options">
+                    <input type="radio" name="pay" id="pay1" value="pay1" required>
+                    <label for="pay1">Pay Now</label>
+                    <input type="radio" name="pay" id="pay2" value="pay2">
+                    <label for="pay2">Pay on Delivery</label>
+                    <input type="radio" name="pay" id="pay3" value="pay3">
+                    <label for="pay3">Installment Plan</label>
+                </div><br><br>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+
+        <div id="receipt">
+            <h2>Order Receipt</h2>
+            <p style="font-size: 0.9em; line-height: 1.6; color: #ccc;">
+                Thank you for choosing us! Once confirmed, your unique booking ID and configuration summary will appear here.
+            </p>
+            <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+            <p>Subtotal: $0.00</p>
+            <p>Delivery: $0.00</p>
+            <h3 style="color: white;">Total Price: $0.00</h3>
+        </div>
+    </div>
+
+    <!-- <script>
+        function showSpecificModels() {
+            var brand = document.getElementById("car").value;
+            var modelWrapper = document.getElementById("model-wrapper");
+            var modelSelect = document.getElementById("specific-model");
+
+            // Define models for each brand
+            var models = {
+                "audi": ["Audi A4 Sedan", "Audi Q7 SUV", "Audi RS e-tron GT"],
+                "bmw": ["BMW 3 Series", "BMW X5 M", "BMW i7 Electric"],
+                "mercedes": ["Mercedes C-Class", "Mercedes GLE Coupe", "Mercedes S-Class Luxury"]
+            };
+
+            // Clear previous models
+            modelSelect.innerHTML = '<option value="">--Select Model--</option>';
+
+            if (brand !== "") {
+                // Show the dropdown and add the models
+                modelWrapper.style.display = "block";
+                models[brand].forEach(function(m) {
+                    var opt = document.createElement("option");
+                    opt.value = m.toLowerCase().replace(/ /g, "-");
+                    opt.text = m;
+                    modelSelect.add(opt);
+                });
+            } else {
+                modelWrapper.style.display = "none";
+            }
+        }
+    </script> -->
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    justify-items: center;
+    background-image: url(backlogin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav{
+    background:linear-gradient(to right ,rgb(188, 188, 205),rgba(232, 103, 23, 0.684));
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100; 
+}
+img{
+    padding: 5px;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgba(30, 89, 143, 0.717);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+a:hover{
+    background-color: rgba(30, 89, 143, 0.717);
+    color: white;
+}
+#welcome{
+    text-align: center;
+    padding: 50px;
+}
+#welcome h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#welcome p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+button{
+    background-color: rgba(132, 222, 155, 0.717);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+button:hover{
+    background-color: rgba(132, 222, 155, 0.717);
+    color: white;
+}
+#login-form{
+    margin-top: 300px;
+    background:linear-gradient(to left ,rgb(227, 215, 215),rgb(52, 180, 216, 0.8));
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(197, 79, 79, 0.1);
+    margin-left: 230px;
+    position:absolute;
+    top: 20px;
+}
+#login-form h1{
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="password"]{
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+label[for="remember"]{
+    display: inline-block;
+    margin-left: 5px;
+}   
+nav{
+    background:linear-gradient(to right ,rgb(188, 188, 205),rgba(232, 103, 23, 0.684));
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+img{
+    padding: 5px;
+    border-radius: 20px;
+    border:1px solid rgba(30, 89, 143, 0.717);
+    box-shadow: 2px 2px 5px rgba(30, 89, 143, 0.717);
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+#footer{
+    margin-top: 750px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right ,rgb(82, 82, 190),rgba(94, 225, 6, 0.684));
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 20px;
+    position: relative;
+}
+p{
+    margin: 0;
+    font-size: 14px;
+    color: rgba(30, 89, 143, 0.717);
+}
+

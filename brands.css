@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow:scroll;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    justify-items: center;
+}
+nav{
+    background:linear-gradient(to right ,rgb(188, 188, 205),rgba(232, 103, 23, 0.684));
+    color: white;
+    padding: 20 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: fit-content;
+    border-radius: 10px;
+}
+img{
+    padding: 5px;
+    border-radius: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: rgba(30, 89, 143, 0.717);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.4s ease;
+}
+a:hover{
+    color: rgb(39, 32, 173);
+    transform: scale(0.2);
+}
+#intro ,h1{
+    text-align: center;
+    padding: 20px;
+    color: rgb(39, 32, 173);
+    font-size: 1.5rem;
+}
+#intro ,p{
+    text-align: center;
+    padding: 20px;
+}
+#audi ,#bmw ,#mercedes{
+    background:linear-gradient(to left,rgb(144, 115, 144),rgb(151, 92, 193),violet);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    flex: 1; /* makes all boxes equal in width */
+    text-align: center;
+    min-width: 300px;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#hero img{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+#choose{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: cornflowerblue;
+    margin: 30px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 70%;
+
+}
+footer{
+    background-color: rgb(39, 32, 173);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+#brand{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
